@@ -1,6 +1,6 @@
 module.exports = {
   images: {
-    domains: ['directv.com','www.directv.com'],
+    domains: ['www.crock-pot.com', 'imagedelivery.net'],
   },
   experimental: {
     runtime: 'experimental-edge', 

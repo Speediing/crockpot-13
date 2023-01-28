@@ -19,8 +19,12 @@ module.exports = {
       },
       fontFamily: {
         sans: ["var(--font-roboto)"],
+        serif: ["var(--font-halant)"],
       },
     },
   },
-  plugins: [],
+  plugins: [
+    // ...
+    require('@tailwindcss/forms'),
+  ],
 };
