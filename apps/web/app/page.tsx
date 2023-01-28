@@ -62,7 +62,7 @@ export default function Page() {
         >
           Find Your Next Crockpot® Product
         </h2>
-        <div className="flex flex-row mx-6">
+        <div className="flex flex-row justify-center mx-6">
           <div>
             <Image
               unoptimized
