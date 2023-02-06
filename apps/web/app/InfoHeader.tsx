@@ -13,9 +13,9 @@ async function InfoHeader() {
   return (
     <div className="h-24 bg-[#102641] text-white py-8 px-11 text-sm flex flex-col justify-center">
       <p className="font-semibold">
-        Your complete financial picture on a single platform
+        Struggling with finding long-lasting, high quality kitchen cookware?
       </p>
-      <p>Connect with more than 20k financial institutions</p>
+      <p>Find your buy-it-for-life kitchen cookware here today!</p>
     </div>
   );
 }
