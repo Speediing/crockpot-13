@@ -2,7 +2,7 @@ import Image from "next/image";
 import ButtonArray from "./ButtonArray";
 import InfoHeader from "./InfoHeader";
 export const runtime = "experimental-edge";
-export const revalidate = 0;
+export const revalidate = 60
 
 import {  Halant } from "next/font/google";
 import Hero from "./Hero";
