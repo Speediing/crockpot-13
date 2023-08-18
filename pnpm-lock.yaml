@@ -46,6 +46,7 @@ importers:
       '@babel/core': ^7.0.0
       '@heroicons/react': ^2.0.14
       '@sanity/client': ^6.1.2
+      '@sanity/image-url': ^1.0.2
       '@sanity/vision': ^3.15.1
       '@tailwindcss/forms': ^0.5.3
       '@types/node': ^17.0.12
@@ -70,6 +71,7 @@ importers:
     dependencies:
       '@heroicons/react': 2.0.14_react@18.2.0
       '@sanity/client': 6.4.9
+      '@sanity/image-url': 1.0.2
       '@sanity/vision': 3.15.1_62vzzrxnsy3jqmiizpwx4sb5xu
       '@vercel/analytics': 0.1.6_react@18.2.0
       '@vercel/edge-config': 0.1.0
