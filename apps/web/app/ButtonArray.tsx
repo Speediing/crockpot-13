@@ -3,9 +3,7 @@ import { headers } from "next/headers";
 import { get } from "@vercel/edge-config";
 
 async function ButtonArray() {
-  // initialize returns a promise which always resolves
   const headersList = headers();
-  const ip = headersList.get("x-real-ip");
   const country = headersList.get("x-vercel-ip-country") || "ca";
 
   const buttonArrayReversed = await get("buttonArrayReversed");

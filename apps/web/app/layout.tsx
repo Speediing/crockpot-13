@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import { Roboto, Halant } from "next/font/google";
+import { Roboto } from "next/font/google";
 import { footerItems } from "ui";
 import { AnalyticsWrapper } from "./Analytics";
 
@@ -12,15 +12,9 @@ const roboto = Roboto({
   variable: "--font-roboto",
 });
 
-const halant = Halant({
-  weight: ["400", "700", "500"],
-  subsets: ["latin"],
-  variable: "--font-halant",
-});
 
 export default function RootLayout({ children }: any) {
   const headersList = headers();
-  const ip = headersList.get("x-real-ip");
   return (
     <html lang="en">
       <head />
@@ -93,11 +87,11 @@ export default function RootLayout({ children }: any) {
         <AnalyticsWrapper />
         <div>{children}</div>
         <footer className="py-20 bg-[#f4f5f8] px-32 xl:px-44 text-black">
-          <img
+          <Image
             src="https://www.crock-pot.com/on/demandware.static/Sites-crockpot-Site/-/default/dw61095556/images/brand-logo.svg"
             width="164"
             height="37"
-            alt="intuit"
+            alt=""
             loading="lazy"
           />
           <p className="pb-4 border-b pt-11 border-b-gray-600">

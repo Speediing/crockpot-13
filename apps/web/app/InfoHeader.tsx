@@ -1,13 +1,7 @@
 import React from "react";
-import { headers } from "next/headers";
 import { get } from "@vercel/edge-config";
 
 async function InfoHeader() {
-  // initialize returns a promise which always resolves
-  const headersList = headers();
-  const ip = headersList.get("x-real-ip");
-  console.log(headersList.get("x-vercel-ip-country"));
-
   const shouldShowHeader = await get("shouldShowBanner");
   if (!shouldShowHeader) return <div></div>;
   return (
