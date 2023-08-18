@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import { Roboto, Halant } from "@next/font/google";
+import { Roboto, Halant } from "next/font/google";
 import { footerItems } from "ui";
 import { AnalyticsWrapper } from "./Analytics";
 
@@ -69,7 +69,7 @@ export default function RootLayout({ children }: any) {
         </header>
         <div className="flex flex-row text-sm justify-center min-h-[44px] mx-10 gap-14  text-[#3b3b3b] font-normal ">
           <div className="flex flex-col justify-center cursor-pointer">
-            What's new
+            What&apos;s new
           </div>
           <div className="flex flex-col justify-center cursor-pointer">
             Slow Cookers
