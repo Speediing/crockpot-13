@@ -1,9 +1,11 @@
 import Image from "next/image";
 import ButtonArray from "./ButtonArray";
 import InfoHeader from "./InfoHeader";
-import {  Halant } from "next/font/google";
 export const runtime = "experimental-edge";
 export const revalidate = 0;
+
+import {  Halant } from "next/font/google";
+import Hero from "./Hero";
 
 const halant = Halant({
   weight: ["400", "700", "500"],
@@ -11,39 +13,14 @@ const halant = Halant({
   variable: "--font-halant",
 });
 
-export default function Page() {
+
+export default  function Page() {
   return (
     <div>
       {/* @ts-expect-error Server Component */}
       <InfoHeader />
-
-      <div className="relative">
-        <Image
-          unoptimized
-          alt=""
-          src="https://s7d9.scene7.com/is/content/NewellRubbermaid/2023_Crock-Pot_January_ContentCalendar_HPBanner1_Desktop_3840x1200?fmt=gif&amp;wid=2880"
-          layout="fill"
-          objectFit="cover"
-        />
-        <div className="relative flex flex-row justify-center text-black h-[500px] ">
-          <div className="grid grid-cols-2  w-[1080px]">
-            <div />
-            <div className="flex flex-col justify-center">
-              <h2
-                className={`pb-2 ${halant.className} leading-tight font-serif text-5xl  font-bold `}
-              >
-                It’s National Slow Cooking Month!
-              </h2>
-              <h3 className="text-xl font-normal">
-                Ease into the New Year with classic, comforting slow-cooked
-                meals you and your family will love.
-              </h3>
-              {/* @ts-expect-error Server Component */}
-              <ButtonArray />
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* @ts-expect-error Server Component */}
+     <Hero />
       <div className="flex flex-col my-12">
         <h2
           className={`pb-2 ${halant.className} leading-tight align-middle text-center font-serif text-3xl  font-bold `}
