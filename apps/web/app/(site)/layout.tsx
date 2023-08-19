@@ -1,7 +1,7 @@
-import "../styles/globals.css";
+import "../../styles/globals.css";
 import { Roboto } from "next/font/google";
 import { footerItems } from "ui";
-import { AnalyticsWrapper } from "./Analytics";
+import { AnalyticsWrapper } from "../Analytics";
 
 import { headers } from "next/headers";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";

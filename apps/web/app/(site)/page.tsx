@@ -1,11 +1,11 @@
 import Image from "next/image";
-import ButtonArray from "./ButtonArray";
-import InfoHeader from "./InfoHeader";
+
+import InfoHeader from "../InfoHeader";
 export const runtime = "experimental-edge";
 export const revalidate = 60
 
 import {  Halant } from "next/font/google";
-import Hero from "./Hero";
+import Hero from "../Hero";
 
 const halant = Halant({
   weight: ["400", "700", "500"],
